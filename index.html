@@ -26,7 +26,7 @@
         <p class="date">Last updated: June 11, 2026</p>
 
         <div class="highlight">
-            <p><strong>Summary:</strong> Our apps store the data you create on your device. SubTrack and QuickNote keep everything fully on-device and never transmit it. FitTrack also stores your data on your device, but its AI features (food-photo recognition, AI coach, and workout/diet plan generation) send the input you provide to our secure backend so a result can be calculated and returned. We do not sell your personal data.</p>
+            <p><strong>Summary:</strong> Our apps store the data you create on your device. SubTrack, QuickNote and FlashLight keep everything fully on-device and never transmit it. FitTrack also stores your data on your device, but its AI features (food-photo recognition, AI coach, and workout/diet plan generation) send the input you provide to our secure backend so a result can be calculated and returned. We do not sell your personal data.</p>
         </div>
 
         <h2>1. Introduction</h2>
@@ -35,11 +35,12 @@
             <p><span class="app-badge">SubTrack</span> A personal expense and subscription tracking application.</p>
             <p><span class="app-badge">QuickNote</span> A note-taking and task management application.</p>
             <p><span class="app-badge">FitTrack</span> An AI-powered calorie counter and fitness assistant (barcode &amp; photo food recognition, AI workout &amp; diet plans, macro &amp; water tracking, body measurements, and health-app integration).</p>
+            <p><span class="app-badge">FlashLight</span> A simple flashlight (torch) application that turns your device's camera flash on and off.</p>
         </div>
         <p>We are committed to protecting your privacy. This policy explains how we handle your data across all of our applications.</p>
 
         <h2>2. Data Collection &amp; Storage</h2>
-        <p>SubTrack and QuickNote do <strong>not</strong> collect any personal data. All information you enter is stored <strong>locally on your device only</strong> and never leaves your device or is transmitted to any server. FitTrack also stores your data locally on your device; the limited cases in which some data is sent to a server for processing are described in Sections 3, 4 and 5.</p>
+        <p>SubTrack, QuickNote and FlashLight do <strong>not</strong> collect any personal data. All information you enter is stored <strong>locally on your device only</strong> and never leaves your device or is transmitted to any server. FitTrack also stores your data locally on your device; the limited cases in which some data is sent to a server for processing are described in Sections 3, 4 and 5.</p>
 
         <h3>SubTrack stores:</h3>
         <ul>
@@ -70,15 +71,22 @@
         </ul>
         <p>Data is stored on-device using SQLite, AsyncStorage and Secure Store.</p>
 
+        <h3>FlashLight stores:</h3>
+        <ul>
+            <li>No personal data is collected or stored.</li>
+            <li>Only basic on-device app preferences (such as the last on/off state) may be saved locally.</li>
+        </ul>
+        <p>FlashLight has no account system, no database of personal information, and no backend server.</p>
+
         <h3>FitTrack &amp; health data:</h3>
         <p>With your permission, FitTrack can <strong>read</strong> health data — steps, heart rate, sleep, and active calories burned — from <strong>Apple Health (HealthKit)</strong> on iOS and <strong>Health Connect</strong> on Android. This data is used only to display information and perform calculations <strong>inside the app</strong>. It is not uploaded to our servers, sold, or shared with third parties. FitTrack reads this data only and does not write data back to these health platforms. You can revoke access at any time in your device's Health/Health Connect settings.</p>
 
         <h2>3. Analytics, Insights &amp; AI Features</h2>
-        <p><strong>SubTrack &amp; QuickNote:</strong> Any analysis or smart features operate entirely on your device. No data is sent to external AI services or cloud servers for processing. All calculations are performed locally.</p>
+        <p><strong>SubTrack, QuickNote &amp; FlashLight:</strong> Any analysis or smart features operate entirely on your device. No data is sent to external AI services or cloud servers for processing. All calculations are performed locally.</p>
         <p><strong>FitTrack:</strong> Some features require server-side processing. When you use AI food-photo recognition, the AI coach/chat, or AI workout &amp; diet plan generation, the relevant input you provide — for example a food photo, a scanned barcode, or the fitness details you enter — is sent over a secure connection to our backend (Google Firebase Cloud Functions) and to a third-party AI provider (Google's Gemini API) so that a result can be generated and returned to your device. Food photos are processed only to produce a nutrition estimate. This data is not used to build advertising profiles and is not sold. Your on-device logs (meals, measurements, workouts, etc.) are not continuously uploaded — only the specific input needed for the feature you actively trigger is transmitted.</p>
 
         <h2>4. Advertising</h2>
-        <p>SubTrack, QuickNote and FitTrack use Google AdMob to display advertisements. AdMob may collect certain device information and advertising identifiers to serve ads. This is governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. We have configured ads to request non-personalized ads only by default.</p>
+        <p>SubTrack, QuickNote, FitTrack and FlashLight use Google AdMob to display advertisements. AdMob may collect certain device information and advertising identifiers to serve ads. This is governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. We have configured ads to request non-personalized ads only by default.</p>
         <p>Information that AdMob may collect includes:</p>
         <ul>
             <li>Device advertising identifier</li>
@@ -89,7 +97,7 @@
         <h2>5. Third-Party Services</h2>
         <p>Our apps use the following third-party services:</p>
         <ul>
-            <li><strong>Google AdMob</strong> - For displaying advertisements (<a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>) <span class="app-badge">SubTrack</span><span class="app-badge">QuickNote</span><span class="app-badge">FitTrack</span></li>
+            <li><strong>Google AdMob</strong> - For displaying advertisements (<a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>) <span class="app-badge">SubTrack</span><span class="app-badge">QuickNote</span><span class="app-badge">FitTrack</span><span class="app-badge">FlashLight</span></li>
             <li><strong>Expo</strong> - For app updates and delivery (<a href="https://expo.dev/privacy" target="_blank">Privacy Policy</a>) <span class="app-badge">SubTrack</span><span class="app-badge">QuickNote</span><span class="app-badge">FitTrack</span></li>
             <li><strong>Google Firebase</strong> (Hosting &amp; Cloud Functions) - Backend that processes FitTrack's AI requests and verifies in-app purchases (<a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>) <span class="app-badge">FitTrack</span></li>
             <li><strong>Google Gemini API</strong> - Powers FitTrack's food-photo recognition and AI coaching/plan features (<a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>) <span class="app-badge">FitTrack</span></li>
@@ -123,12 +131,19 @@
             <li><strong>Internet Access</strong> - Required for AI features, advertisements and purchases</li>
         </ul>
 
+        <h3>FlashLight may request:</h3>
+        <ul>
+            <li><strong>Camera</strong> - Required to control the device's camera flash (torch). FlashLight does not take photos, record video, or access your camera feed; the permission is used only to turn the flash on and off.</li>
+            <li><strong>Internet Access</strong> - Required for displaying advertisements</li>
+        </ul>
+
         <h2>7. Data Deletion</h2>
         <p>You can delete your data at any time:</p>
         <ul>
             <li><strong>SubTrack:</strong> Use the "Delete All Data" option in the app's Settings page.</li>
             <li><strong>QuickNote:</strong> Delete individual notes and tasks within the app, or clear all app data through your device settings.</li>
             <li><strong>FitTrack:</strong> Delete individual entries within the app, or use the data / account deletion option in Settings to remove your data, including any purchase-related records stored on our backend. You may also email us to request deletion.</li>
+            <li><strong>FlashLight:</strong> FlashLight does not store any personal data. Clearing the app's data through your device settings will reset any local preferences.</li>
         </ul>
         <p>Uninstalling any of our apps will also remove all locally stored data from your device.</p>
 
